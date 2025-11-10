@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Folder File Info</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📁 Folder File Viewer</h1>
+    <label class="custom-btn">
+      Choose Folder
+      <input type="file" id="folderInput" webkitdirectory multiple hidden />
+    </label>
+
+    <table id="fileTable">
+      <thead>
+        <tr>
+          <th>File Name</th>
+          <th>File Size</th>
+          <th>Info</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div id="infoModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <div id="fileInfo"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
